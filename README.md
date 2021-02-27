@@ -1,5 +1,3 @@
-Welcome to the YouTube-Downloader wiki!
-
 This program downloads YouTube videos and saves to your local computer!  
 ![](https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/128/youtube.png)
 
