@@ -21,7 +21,6 @@ def download_video(url):
 def progress(stream, chunk, remains):  # 'chunk' must exist
     total = stream.filesize
     percent = (total - remains) / total * 100
-    # print('Downloading… {:05.2f}%'.format(percent), end='\r')
     print('Download progress = [' + '▉' * int(percent / 5),
           ' ' * (20 - int(percent / 5)) + '] ' + '{:05.2f}%'.format(percent), end='\r')
 
