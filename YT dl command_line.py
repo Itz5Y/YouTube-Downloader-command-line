@@ -6,14 +6,6 @@ from moviepy.editor import VideoFileClip
 
 def download_video(url):
     yt = YouTube(url, on_progress_callback=progress)
-    stream = yt.streams.get_highest_resolution()
-    print("=========\nTitle:        " + yt.title + "\nResolution:   " + stream.resolution + "\n=========")
-    stream.download('YT downloads')
-    input('\nThe video is saved in ' + os.getcwd() + '\YT downloads')
-
-
-def download_video(url):
-    yt = YouTube(url, on_progress_callback=progress)
     try:
         stream = yt.streams.filter(res="720p").first()
     except:
